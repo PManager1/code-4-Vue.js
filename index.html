@@ -6,9 +6,17 @@
 <body>
 <div id="myApp">
 	myapp
+	{{output}}
 </div>
-<script src="vue.js"></script>
 
+<script src="vue.js"></script>
+	<script type="text/javascript">
+	var myData = { output: 'Hello World'}
+	new Vue ({
+		el: '#myApp',
+		data: myData
+	})
+</script>
 <h1>helo</h1>
 </body>
 </html>
